@@ -125,10 +125,14 @@ async function cargarProductos() {
   const estado = document.getElementById("estado");
 estado.textContent = "Cargando productos...";
   try {
-    const respuesta = await fetch(
-      "https://api.jsonblob.com/01a1457d-8148-73f2-a9c3-64c0b5006681"
-    );
-
+const respuesta = await fetch(
+  "https://api.github.com/repos/sggbaaken/agoodshop-carrito/contents/productos.json",
+  {
+    headers: {
+      Accept: "application/vnd.github.raw+json"
+    }
+  }
+);
    if (!respuesta.ok) {
       throw new Error("Error HTTP: " + respuesta.status);
     }
