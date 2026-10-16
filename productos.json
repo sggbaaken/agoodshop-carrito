@@ -1,0 +1,15 @@
+{
+  "currency": "€",
+  "products": [
+    {
+      "SKU": "ABC123",
+      "title": "Cargador",
+      "price": "49.99"
+    },
+    {
+      "SKU": "DEF456",
+      "title": "Funda",
+      "price": "20.00"
+    }
+  ]
+}
